@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 100 Cryptocurrency Investment Tracker</title>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/static/favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4dOE4w4kzlJ1xJyNynV7+Yt8reN+XOaFZgJhE2Gc1wAsx7z+3hEtdm7JgTETTSD9XQ0ZsB0SmJdwdeMZk4wF0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+
+    
+    /* HEADER */
+    /* 1. Set the background color of the navigation bar */
+    .navbar {
+      background-color: #222;
+
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* 2. Set the foreground color of the navigation bar */
+    .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* 3. Add hover effect on the navigation links */
+    .navbar-dark .navbar-nav .nav-link:hover {
+      text-decoration: none;
+      color: rgb(41, 186, 8);
+
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      background: transparent;
+      transition: width 0.3s ease, background-color 0.3s ease;
+
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover::after {
+      width: 100%;
+      background-color: rgb(41, 186, 5);
+      transform-origin: 50% 50%;
+      transform: scale(1, 1.5);
+
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* 4. Add a rectangle around the navbar brand text */
+      .navbar-brand {
+        padding: 8px 16px;
+        background-color:rgb(41, 186, 5);
+        color: white;
+        border-radius: 8px;
+
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      /* 5. Set the hover effect for the navbar brand */
+      .navbar-brand:hover {
+        background-color: rgb(41, 186, 8);
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      body {
+      position: relative;
+      color: #fff;
+      
+    }
+
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_781123510.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Adjust the blur intensity as needed */
+    z-index: -1;
+
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px; /* Set width of the scrollbar */
+    }
+
+    /* Style the scrollbar track */
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    /* Style the scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+      background-color: #fff(93, 158, 217);
+      border-radius: 5px;
+    }
+
+    /* Change scrollbar thumb on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        table {
+    border-collapse: collapse;
+    width: 80%;
+    }
+
+    th, td {
+    border: 2px solid #ddd; /* Set the border thickness */
+    border-radius: 10px; /* Make the corners rounded */
+    padding: 8px;
+    text-align: left;
+    font-weight: bold; /* Make the content bold */
+    }
+
+    th {
+    background-color: #333;
+    color: white;
+    font-weight: bold; /* Make the headers bold */
+    }
+
+
+        .symbol-image {
+            max-width: 30px;
+            max-height: 30px;
+            vertical-align: middle;
+        }
+
+        .investment-input {
+            margin: 5px;
+        }
+        button {
+          position: relative; /* Set position to relative for pseudo-element positioning */
+        }
+
+        button::before {
+        content: '';
+        position: absolute;
+        top: -2px; /* Adjust the top position to cover the top border */
+        left: -2px; /* Adjust the left position to cover the left border */
+        right: -2px; /* Adjust the right position to cover the right border */
+        bottom: -2px; /* Adjust the bottom position to cover the bottom border */
+        border: 2px solid #fff; /* White border */
+        border-radius: 5px; /* Rounded corners for the border */
+        z-index: -1; /* Set z-index to position below the button content */
+      }
+
+        .crypto-logo {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      /*background-image: url('https://th.bing.com/th/id/OIP.um8GSSkRvHeU6evCmAZfxgHaHa?pid=ImgDet&w=500&h=500&rs=1');*/
+      background-size: cover;
+      margin-right: 20px;
+      /*animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;*/
+      transform-origin: center center;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg) scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
+      }
+      50% {
+        transform: rotate(180deg) scale(0.8);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    .input-box {
+    border: 2px solid #4CB963; /* Border around the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 10px; /* Padding inside the box */
+    text-align: center; /* Center align the elements */
+    margin: 10px; /* Add margin to separate it from other content */
+}
+
+.investment-input {
+    margin-right: 10px; /* Add spacing between input and button */
+}
+
+button {
+    background-color: #222; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold; /* Make the button text bold */
+}
+.title-box {
+    background-color: rgb(41,186,5); /* Green background color */
+    border: 2px solid white; /* White border around the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px; /* Increase the padding inside the box for more height */
+    margin: 20px 0; /* Add margin to the top and bottom for more height */
+    display: inline-block; /* To make the box fit the content width */
+}
+
+
+.header-text {
+        background-color: rgb(41, 186, 5);
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 25px;
+        display: inline-block;
+        margin-bottom: 20px; /* add margin to the bottom */
+}
+
+</style>
+</head>
+<body>
+    <!--<div class="container">
+        <div>
+            <label for="investAmount">Enter Investment Amount (USD):</label>
+            <input type="number" id="investAmount" class="investment-input" step="0.01" min="0" placeholder="0.00">
+            <button onclick="updateInvestment()">Update Investments</button>
+        </div>-->
+    <body>
+
+
+        <!--NAVBAR-->
+        <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+           <a class="navbar-brand" href="/" style="font-size: 20px">
+             <img src="https://static.vecteezy.com/system/resources/previews/000/205/146/original/vector-bitcoin-symbol-on-orange-background.jpg" alt="Logo" style= "height: 30px; margin-right: 10px;">
+             CryptoStalker
+           </a>
+
+           <button
+             class="navbar-toggler"
+             type="button"
+             data-toggle="collapse"
+             data-target="#navbarNav"
+             aria-controls="navbarNav"
+             aria-expanded="false"
+             aria-label="Toggle navigation"
+           >
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="/price">CryptoCurrencies</a>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/convert">BitCoin Convertor</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/predict">Price Estimation</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/tradesignal">Trade Signals</a>
+               </li>
+     
+               <li class="nav-item">
+                 <a class="nav-link" href="/portfolio">Portfolio</a>
+               </li>
+
+               <li class="nav-item">
+                <a class="nav-link" href="/events">Crypto Investment</a>
+              </li>
+     
+     
+               <li class="nav-item">
+                 <a class="nav-link" href="/about">About Us</a>
+               </li>
+               </li>
+             </ul>
+           </div>
+         </nav>
+       </header>
+     
+     
+     <heading>
+        <div class="container mt-5">
+            <div class="text-center">
+                <div class="title-box">
+                    <h1 class="header-text">Crypto Investment</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3 investment-container">
+          <label for="investAmount">Enter Investment Amount (USD):</label>
+          <input type="number" id="investAmount" class="investment-input" step="0.01" min="0" placeholder="0.00">
+          <button onclick="updateInvestment()">Update Investments</button>
+      </div>
+
+    <div class="container text-center mt-3">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Price (USD)</th>
+                    <th>Invested Amount</th>
+                    <th>Current Value</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-table">
+                <!-- Cryptocurrency data will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+     </heading>
+     
+
+    <script>
+        const apiUrl = 'https://api.coingecko.com/api/v3/coins/markets';
+        const params = {
+            vs_currency: 'usd',
+            order: 'market_cap_desc',
+            per_page: 100,
+            page: 1,
+            sparkline: false,
+        };
+
+        const investments = {};
+
+        function updateInvestment() {
+            const investAmount = parseFloat(document.getElementById('investAmount').value);
+            if (isNaN(investAmount) || investAmount < 0) {
+                alert('Please enter a valid investment amount.');
+                return;
+            }
+
+            // Apply the user's investment amount to all 100 cryptocurrencies
+            fetchCryptocurrencyData(investAmount);
+        }
+
+        async function fetchCryptocurrencyData(investAmount) {
+            try {
+                const response = await fetch(`${apiUrl}?vs_currency=${params.vs_currency}&order=${params.order}&per_page=${params.per_page}&page=${params.page}&sparkline=${params.sparkline}`);
+                const data = await response.json();
+
+                // Set the investment amount for each cryptocurrency
+                data.forEach(crypto => {
+                    investments[crypto.id] = investAmount;
+                });
+
+                displayCryptocurrencyData(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        function displayCryptocurrencyData(data) {
+            const cryptoTable = document.getElementById('crypto-table');
+            cryptoTable.innerHTML = '';
+
+            data.forEach(crypto => {
+                const cryptoInvestment = investments[crypto.id] || 0;
+                const currentInvestmentValue = cryptoInvestment * crypto.current_price;
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${crypto.name}</td>
+                    <td><img src="${crypto.image}" class="symbol-image" alt="${crypto.symbol}"> ${crypto.symbol.toUpperCase()}</td>
+                    <td>$${crypto.current_price.toFixed(2)}</td>
+                    <td>$${cryptoInvestment.toFixed(2)}</td>
+                    <td>$${currentInvestmentValue.toFixed(2)}</td>
+                `;
+                cryptoTable.appendChild(row);
+            });
+        }
+
+        // Initialize with an initial investment amount (you can remove this line if you don't want an initial amount)
+        updateInvestment();
+
+        setInterval(fetchCryptocurrencyData, 30000); // Update data every 30 seconds
+    </script>
+
+<style>
+    footer {
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.5;
+      margin-top: 2rem; /* Add margin to the top of the footer */
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer h4 {
+      color: #fff;
+    }
+    footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    footer .list-inline-item {
+      margin-right: 1rem;
+    }
+    footer hr {
+      border-color: rgba(255, 255, 255, 0.1);
+      margin: 2rem 0;
+    }
+    @media (max-width: 576px) {
+      footer .col-sm-12 {
+        margin-bottom: 2rem;
+      }
+    }
+    ul.list-unstyled li a:hover {
+      color: rgb(41, 186, 8);
+    }
+    a:hover i {
+      color: rgb(41, 186, 8);
+    }
+  </style>
+  
+  <footer class="bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h4 class="text-light mb-4">About Us</h4>
+          <p class="text-muted">
+            CryptoStalker is your ultimate resource for staying informed about the latest developments in cryptocurrency.
+            Our mission is to provide you with real-time updates on prices, breaking news, market trends, and a wealth of other essential insights. With our commitment to excellence, 
+            we aspire to become your trusted destination for everything related to the world of crypto.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h4 class="text-light mb-4">Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/price">Cryptocurrencies</a></li>
+            <li><a href="/news">News</a></li>
+            <!--<li><a href="/sentiment">Sentiments</a></li>
+            <li><a href="/tweets">Tweets</a></li>-->
+            <li><a href="/convert">Converter</a></li>
+            <li><a href="/predict">Price Estimation</a></li>
+            <li><a href="/tradesignal">Trade Signals</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/events">Cryto Investment</a></li>
+            <li><a href="aboutus">About Us</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h4 class="text-light mb-4">Contact Us</h4>
+          <p class="text-muted mb-0">You can contact us through our social media accounts:</p>
+          <div class="mt-2">
+              <a href="https://www.linkedin.com/" target="_blank" class="mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/" target="_blank" class="mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>        
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="text-muted mb-0">
+            CryptoStalker &copy; 2024. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Include Bootstrap JavaScript -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.3/dist/umd/popper.min.js"
+    integrity="sha384-9XUhqZ1dFpfI3q3WcYG7rM79Kfjed7h9pi1tR9RtHBLiZQx7Zn8AGPOQD7YMeh1"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+    
+
+</body>
+</html>
